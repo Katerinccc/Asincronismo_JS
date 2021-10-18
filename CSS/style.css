@@ -15,7 +15,7 @@ main{
     width: 100%;
     min-width: 320px;
     text-align: center;
-    height: 100vh;
+    height: calc(100vh - 50px);
 }
 
 main h1{
@@ -57,7 +57,7 @@ main h1{
 }
 
 .footer{
-    outline: 1px solid #FFF5FD;
-    height: 6rem;
     margin-top: auto;
+    height: 10px;
+    font-size: 2rem;
 }
