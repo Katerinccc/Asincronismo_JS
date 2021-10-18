@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get a character</title>
+    <title>Get character</title>
+    <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
-    <head>
-        <h1>Busca tu personaje de Ricky and Morty</h1>
-    </head>
     <main>
-        <form>
-            <label for="get-character">Selecciona el numero de su personaje</label>
+        <h1>Busca tu personaje de Ricky and Morty</h1>
+        <form class="character__form">
+            <label for="get-character">Selecciona el numero del personaje, hay mas de 600 personajes para descubrir...</label><br>
             <input type="number" id="get-character" placeholder="Ej: 1,2,3...">
             <button type="button" onclick="getCharacter()">
                 Encontrar
             </button>
             <p id="name"></p>
-            <p id="dimension"></p>
+            <p id="species"></p>
+            <p id="location"></p>
             <img id="imageCharacter">
         </form>
     </main>
+    <footer class="footer">
+        footer
+    </footer>
     <script src="./src/index.js"></script>
 </body>
 </html>

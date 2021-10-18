@@ -10,18 +10,15 @@ function getCharacter(){
   const character = document.getElementById("get-character");
   const characterNumber = Number(character.value);
   const nameCharacter = document.getElementById("name");
+  const specieCharacter = document.getElementById("species");
+  const locationCharacter = document.getElementById("location");
   const imageCharacter = document.getElementById("imageCharacter");
 
   getFromApi(characterNumber)
     .then(data => {
       nameCharacter.innerText = "El nombre del personaje es: " + data.name;
+      specieCharacter.innerText = "es de la especie: " + data.species;
+      locationCharacter.innerText = "y se encuentra en: " + data.location.name;
       imageCharacter.src = data.image;
   });
 }
-
-// async function getFromApi(id) {
-//   const response = await fetch(`${API}/${id}`);
-//   const data1 = await response.json();
-//   const name = data1.name;
-//   return name;
-// }
