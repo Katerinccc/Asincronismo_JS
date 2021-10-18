@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a character</title>
+</head>
+<body>
+    <head>
+        <h1>Busca tu personaje de Ricky and Morty</h1>
+    </head>
+    <main>
+        <form>
+            <label for="get-character">Selecciona el numero de su personaje</label>
+            <input type="number" id="get-character" placeholder="Ej: 1,2,3...">
+            <button type="button" onclick="getCharacter()">
+                Encontrar
+            </button>
+            <p id="name"></p>
+            <p id="dimension"></p>
+            <img id="imageCharacter">
+        </form>
+    </main>
+    <script src="./src/index.js"></script>
+</body>
+</html>
